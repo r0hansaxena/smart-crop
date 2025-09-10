@@ -174,9 +174,9 @@ const FarmerProfile = ({ setProfile, setView }) => {
               required
             >
               <option value="">Select farm size</option>
-              <option value="Small (< 2 acres)">Small (< 2 acres)</option>
+              <option value="Small (less than 2 acres)">Small (less than 2 acres)</option>
               <option value="Medium (2-10 acres)">Medium (2-10 acres)</option>
-              <option value="Large (> 10 acres)">Large (> 10 acres)</option>
+              <option value="Large (more than 10 acres)">Large (more than 10 acres)</option>
             </select>
           </div>
 
