@@ -244,6 +244,441 @@ body {
   cursor: not-allowed;
 }
 
+/* Calendar Styles */
+.calendar-content {
+  padding: 20px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.add-crop-section {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.add-crop-section h3 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.crop-selector {
+  display: flex;
+  gap: 10px;
+}
+
+.crop-selector select {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.crop-selector button {
+  padding: 12px 16px;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.calendar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.calendar-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0f0f0;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.calendar-header h3 {
+  color: #2c3e50;
+  font-size: 18px;
+}
+
+.risk-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.risk-badge.low {
+  background: #d4edda;
+  color: #155724;
+}
+
+.risk-badge.medium {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.risk-badge.high {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.calendar-details {
+  margin-bottom: 15px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.detail-row .label {
+  color: #666;
+  font-weight: 500;
+}
+
+.market-score {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.score-bar {
+  flex: 1;
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.score-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4CAF50, #45a049);
+  transition: width 0.3s ease;
+}
+
+/* Market Styles */
+.market-tabs {
+  display: flex;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.tab {
+  flex: 1;
+  padding: 15px;
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab.active {
+  color: #4CAF50;
+  background: white;
+  border-bottom: 2px solid #4CAF50;
+}
+
+.market-content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.prices-section {
+  padding: 20px;
+}
+
+.price-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.price-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.price-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.price-header h3 {
+  color: #2c3e50;
+  font-size: 18px;
+}
+
+.trend {
+  font-size: 20px;
+}
+
+.price-main {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.unit {
+  color: #666;
+  font-size: 14px;
+}
+
+.price-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.meta-item {
+  font-size: 14px;
+}
+
+.alerts-section {
+  padding: 20px;
+}
+
+.alerts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.alert-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #4CAF50;
+}
+
+.alert-card.high {
+  border-left-color: #f44336;
+}
+
+.alert-card.medium {
+  border-left-color: #FF9800;
+}
+
+.alert-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.alert-type {
+  font-size: 20px;
+}
+
+.alert-crop {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.priority-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: auto;
+}
+
+.priority-badge.high {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.priority-badge.medium {
+  background: #fff3e0;
+  color: #ef6c00;
+}
+
+.priority-badge.low {
+  background: #e8f5e8;
+  color: #2e7d32;
+}
+
+.alert-message {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.alert-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.alert-details .detail {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Recommendations Styles */
+.recommendations-content {
+  padding: 20px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.ai-analysis {
+  background: #f0f8ff;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #4CAF50;
+}
+
+.ai-analysis h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.ai-analysis p {
+  color: #333;
+  line-height: 1.5;
+}
+
+.recommendations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.recommendation-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.rec-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.rec-header h3 {
+  color: #2c3e50;
+  font-size: 20px;
+}
+
+.confidence-score {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.rec-profit {
+  background: #e8f5e8;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profit-label {
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+.profit-value {
+  color: #1b5e20;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.rec-details {
+  margin-bottom: 15px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.detail-item .label {
+  color: #666;
+  font-weight: 500;
+}
+
+.rec-benefits,
+.rec-risks {
+  margin-bottom: 15px;
+}
+
+.rec-benefits h4 {
+  color: #2e7d32;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.rec-risks h4 {
+  color: #d32f2f;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.rec-benefits ul,
+.rec-risks ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.rec-benefits li,
+.rec-risks li {
+  padding: 4px 0;
+  font-size: 14px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.rec-benefits li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.rec-risks li::before {
+  content: "⚠";
+  position: absolute;
+  left: 0;
+  color: #d32f2f;
+}
+
 /* Chat Styles */
 .chat-container {
   display: flex;
@@ -502,6 +937,14 @@ body {
   .header {
     border-radius: 0;
   }
+  
+  .crop-selector {
+    flex-direction: column;
+  }
+  
+  .price-main {
+    align-items: center;
+  }
 }
 
 /* Loading animations */
@@ -510,7 +953,7 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-.feature-card, .message, .history-item {
+.feature-card, .message, .history-item, .calendar-card, .price-card, .alert-card, .recommendation-card {
   animation: fadeIn 0.3s ease;
 }
 
