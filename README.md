@@ -147,6 +147,6 @@ Pull requests, issues, and feature requests are welcome!
 
 ## 📄 License
 
-MIT (or specify your license here)
+MIT 
 
 ***
